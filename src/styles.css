@@ -1,0 +1,211 @@
+/* GLOBAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  box-sizing: border-box;
+}
+.Nav,
+.About,
+.Portfolio,
+.Contact {
+  font-family: "Roboto Slab", serif;
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+  /* width: 100vw; */
+}
+.About,
+.Portfolio,
+.Contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 5rem;
+  color: #a0a0a0;
+}
+h3 {
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+}
+
+/* NAV STYLES */
+
+.Nav {
+  display: flex;
+  /* justify-content: space-around; */
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 15vh;
+  /* background: pink; */
+  align-items: center;
+}
+.Nav h1,
+.Nav ul {
+  width: 50vw;
+}
+.Nav h1 {
+  font-size: 2rem;
+}
+.Nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.Nav ul li {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Nav ul li:last-child {
+  padding-right: 0;
+}
+
+/* ABOUT STYLES */
+
+.About {
+  padding-bottom: 5%;
+}
+
+.About .skills {
+  display: flex;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+.About .skills div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.About .skills div svg {
+  font-size: 3rem;
+}
+
+/* PORTFOLIO STYLES */
+
+.Portfolio .PortfolioCard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.Portfolio .PortfolioCard:first-of-type {
+  padding-top: 0;
+}
+.Portfolio .PortfolioCard:last-child {
+  border-bottom: 0;
+}
+.Portfolio .PortfolioCard .image-container,
+.Portfolio .PortfolioCard .content {
+  width: 50%;
+  /* display: flex; */
+}
+.Portfolio .PortfolioCard .image-container {
+  justify-content: center;
+  padding-left: 10vw;
+}
+.Portfolio .PortfolioCard .image {
+  /* height: 300px; */
+  /* width: auto; */
+  width: 500px;
+  height: auto;
+  /* background: pink; */
+}
+.Portfolio .PortfolioCard .content {
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  /* display: flex; */
+}
+.Portfolio .PortfolioCard .content .description,
+.Portfolio .PortfolioCard .content .portfolio-buttons {
+  font-family: "Roboto", sans-serif;
+}
+.Portfolio .PortfolioCard .content .description {
+  color: #a0a0a0;
+  line-height: 1.5rem;
+  padding-right: 10vw;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons {
+  display: flex;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #000000;
+  color: #ffffff;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons div:last-child {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  margin-left: 1rem;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons div svg {
+  font-size: 1.25rem;
+}
+
+/* CONTACT STYLES */
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.Contact form input {
+  height: 30px;
+  margin-bottom: 3rem;
+}
+.Contact form textarea {
+  height: 150px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+.Contact form button {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #000000;
+  color: #ffffff;
+}
+.Contact form button:focus {
+  outline: none;
+  background: #a0a0a0;
+  transition: 1s;
+}
+.Contact form p {
+  margin: 0 auto;
+}
+.Contact .contact-links {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.Contact .contact-links div {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.Contact .contact-links div span {
+  margin-left: 0.25rem;
+}
